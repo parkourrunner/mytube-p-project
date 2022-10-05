@@ -1,6 +1,8 @@
 # mytube-p-project
 
-My first personal fullstack project for creating a webapp like youtube.
+My first personal fullstack project for creating a webapp like youtube.\
+Deployed sample on Firebase:
+https://mytube-f4f9b.web.app/
 
 Backend: NodeJs, Express, MongoDB, JWT\
 Frontend: React, Redux, Redux-Persist, styled, axios\
