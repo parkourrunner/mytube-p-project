@@ -2,8 +2,7 @@ import { initializeApp } from "firebase/app";
 import { getAuth, GoogleAuthProvider } from "firebase/auth";
 
 const firebaseConfig = {
-  // apiKey: process.env.FIREBASE_API_KEY,
-  apiKey: "AIzaSyA7nMgvtAR_2ix36cYa0c1CcDjzN8y_hLI",
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
   authDomain: "mytube-f4f9b.firebaseapp.com",
   projectId: "mytube-f4f9b",
   storageBucket: "mytube-f4f9b.appspot.com",
