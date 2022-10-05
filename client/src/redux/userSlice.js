@@ -24,9 +24,21 @@ export const userSlice = createSlice({
     logout: (state) => {
       state = initialState;
     },
+    subscription: (state, action) => {
+      if (!state.currentUser.subscribedUsers.includes(action.payload)) {
+        state.currentUser.subscribedUsers.push(action.payload);
+      } else {
+        state.currentUser.subscribedUsers.splice(
+          state.currentUser.subscribedUsers.findIndex(
+            (userId) => userId === action.payload
+          ),
+          1
+        );
+      }
+    },
   },
 });
 
-export const { loginStart, loginSuccess, loginFailure, logout } =
+export const { loginStart, loginSuccess, loginFailure, logout, subscription } =
   userSlice.actions;
 export default userSlice.reducer;
